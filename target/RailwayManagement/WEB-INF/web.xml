@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+
+
+    <servlet>
+        <servlet-name>TrainServlet</servlet-name>
+        <servlet-class>servlet.TrainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TrainServlet</servlet-name>
+        <url-pattern>/train</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PassengerServlet</servlet-name>
+        <servlet-class>servlet.PassengerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PassengerServlet</servlet-name>
+        <url-pattern>/addPassenger</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TicketServlet</servlet-name>
+        <servlet-class>servlet.TicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TicketServlet</servlet-name>
+        <url-pattern>/bookTicket</url-pattern>
+    </servlet-mapping>
+    
+
+</web-app>
