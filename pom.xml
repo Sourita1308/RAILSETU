@@ -18,7 +18,13 @@
     </properties>
 
     <dependencies>
-        <!-- ✅ Jakarta Servlet API -->
+       <!-- BCrypt for Password Hashing -->
+    <dependency>
+        <groupId>org.mindrot</groupId>
+        <artifactId>jbcrypt</artifactId>
+        <version>0.4</version> <!-- A common, stable version -->
+    </dependency>
+        <!-- Jakarta Servlet API -->
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
@@ -26,7 +32,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- ✅ JSP API -->
+        <!-- JSP API -->
         <dependency>
             <groupId>jakarta.servlet.jsp</groupId>
             <artifactId>jakarta.servlet.jsp-api</artifactId>
@@ -34,7 +40,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- ✅ JSTL -->
+        <!-- JSTL API and Implementation -->
         <dependency>
             <groupId>jakarta.servlet.jsp.jstl</groupId>
             <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
@@ -46,14 +52,18 @@
             <version>2.0.0</version>
         </dependency>
 
-        <!-- ✅ MySQL JDBC Connector -->
+        <!--
+          CRITICAL CHANGE HERE
+          Version changed from 8.3.0 to 8.0.33 to match your MySQL 8.0.x server
+          This is the fix for the 404 "Not Found" error.
+        -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
-            <version>8.3.0</version>
+            <version>8.0.33</version>
         </dependency>
 
-        <!-- ✅ JUnit (optional for tests) -->
+        <!-- JUnit (optional for tests) -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -86,7 +96,7 @@
         </plugins>
     </build>
 
-    <!-- ✅ Make sure central repo is set -->
+    <!-- Make sure central repo is set -->
     <repositories>
         <repository>
             <id>central</id>
@@ -95,3 +105,4 @@
     </repositories>
 
 </project>
+
