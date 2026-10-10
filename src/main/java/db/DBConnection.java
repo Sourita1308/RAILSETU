@@ -24,7 +24,7 @@ public class DBConnection {
                 port = "3306";
             if (dbName == null || dbName.isEmpty())
                 dbName = "railwaydb";
-            URL = String.format("jdbc:mysql://%s:%s/%s?useSSL=true&requireSSL=true", host, port, dbName);
+            URL = String.format("jdbc:mysql://%s:%s/%s?useSSL=true&allowPublicKeyRetrieval=true", host, port, dbName);
             USER = envUser;
             PASSWORD = envPass;
         } else {
@@ -32,7 +32,7 @@ public class DBConnection {
             String defaultHost = System.getenv().getOrDefault("DB_HOST", "mysql-6450161-souritabanerjee506-55f0.h.aivencloud.com");
             String defaultPort = System.getenv().getOrDefault("DB_PORT", "26931");
             String defaultDb   = System.getenv().getOrDefault("DB_NAME", "defaultdb");
-            URL = String.format("jdbc:mysql://%s:%s/%s?useSSL=true&requireSSL=true", defaultHost, defaultPort, defaultDb);
+            URL = String.format("jdbc:mysql://%s:%s/%s?useSSL=true&allowPublicKeyRetrieval=true", defaultHost, defaultPort, defaultDb);
             USER = System.getenv().getOrDefault("DB_USER", "avnadmin");
             PASSWORD = System.getenv().getOrDefault("DB_PASSWORD", "");
         }
