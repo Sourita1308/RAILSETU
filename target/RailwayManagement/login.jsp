@@ -94,6 +94,10 @@
                        aria-label="Password">
             </div>
 
+            <div class="flex justify-end mb-6 -mt-2">
+                <a href="forgot-password.jsp" class="text-sm font-semibold text-primary-purple hover:text-secondary-blue">Forgot Password?</a>
+            </div>
+
             <button type="submit" 
                     class="w-full py-3 bg-primary-purple text-white font-bold text-lg rounded-lg shadow-md hover:bg-secondary-blue transition duration-300 ease-in-out transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-primary-purple/50">
                 LOGIN NOW

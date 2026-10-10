@@ -1,0 +1,18 @@
+<step title="Incoming Request" date="2026-05-30T06:48:32.314" instance="b2123a" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="831,1,7" Accept="*/*" Host="railway-app-e7bhahbshp6ca.scm.azurewebsites.net" User-Agent="AZURECLI/2.86.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bas..." Cache-Control="no-cache" Content-Type="application/octet-stream" Content-Length="10077022" x-ms-client-request-id="7bf32787-5bf3-11f1-bdd4-f8712e297383" x-ms-artifact-checksum="9f13e6f664a5c0b72ce54468b4149f37651ddc6b031fbd535f6aae2387807939" X-ARR-LOG-ID="7bf32787-5bf3-11f1-bdd4-f8712e297383" CLIENT-IP="152.58.162.228:54377" X-SITE-DEPLOYMENT-ID="railway-app-e7bhahbshp6ca" WAS-DEFAULT-HOSTNAME="railway-app-e7bhahbshp6ca.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/zipdeploy?isAsync=true" X-Client-IP="152.58.162.228" X-Client-Port="54377" >
+  <step title="ZipPushDeploy" date="2026-05-30T06:48:33.800" >
+    <step title="ZipDeploy. Run from package." date="2026-05-30T06:48:33.837" /><!-- duration: 2ms -->
+    <step title="None repository commit" date="2026-05-30T06:48:33.856" >
+      <step title="Commit id: cd5d7254-016b-44fc-a2be-970fee223116" date="2026-05-30T06:48:33.859" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 2ms -->
+    </step><!-- duration: 22ms -->
+    <step title="Starting PushDeployAsync" date="2026-05-30T06:48:33.897" /><!-- duration: 10ms -->
+    <step title="WEBSITE_RUN_FROM_PACKAGE is set to 1. Writing zip to SitePackagesPath" date="2026-05-30T06:48:33.926" /><!-- duration: 8ms -->
+    <step title="Copying zip to SitePackages /home/data/SitePackages/20260530064833.zip from request body" date="2026-05-30T06:48:33.946" /><!-- duration: 2ms -->
+    <step title="Writing multipart request body to /home/data/SitePackages/20260530064833.zip" date="2026-05-30T06:48:33.975" /><!-- duration: 28ms -->
+    <step title="Writing zip file to /home/data/SitePackages/20260530064833.zip" date="2026-05-30T06:48:34.007" /><!-- duration: 1130ms -->
+    <step title="Start deployment in the background" date="2026-05-30T06:48:35.622" >
+      <step title="Acquiring Deployment Lock" date="2026-05-30T06:48:35.693" /><!-- duration: 11ms -->
+      <step title="Acquired Deployment Lock" date="2026-05-30T06:48:36.522" /><!-- duration: 81ms -->
+    </step><!-- duration: 1435ms -->
+  </step><!-- duration: 3287ms -->
+  <step title="Outgoing response" date="2026-05-30T06:48:37.186" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 21ms -->
+</step><!-- duration: 4903ms -->

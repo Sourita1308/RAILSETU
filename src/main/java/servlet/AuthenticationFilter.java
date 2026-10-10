@@ -17,7 +17,9 @@ public class AuthenticationFilter implements Filter {
         "/signup",       // Signup servlet action
         "/index.jsp",    // Allow homepage (since it was renamed from .html)
         "/",             // Allow root context path (defaults to index.jsp)
-        "/account.html"  // === ADDED: Allow access to the account required page ===
+        "/account.html", // === ADDED: Allow access to the account required page ===
+        "/forgot-password.jsp",
+        "/forgot-password"
     ));
 
     // Prefixes for static resources that DON'T require login

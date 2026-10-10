@@ -1,0 +1,10 @@
+target/
+*.war
+*.jar
+*.zip
+.mvn/
+.idea/
+.settings/
+.classpath
+.project
+server-cert.pem

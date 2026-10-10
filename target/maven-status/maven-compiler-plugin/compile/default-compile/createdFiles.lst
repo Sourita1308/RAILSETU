@@ -19,6 +19,7 @@ servlet\TrainServlet.class
 servlet\ViewBookingsServlet.class
 servlet\CancelBookingServlet.class
 servlet\TrainScheduleServlet.class
+servlet\ForgotPasswordServlet.class
 servlet\LoadBookingPageServlet.class
 servlet\TrainRouteServlet.class
 model\Train.class

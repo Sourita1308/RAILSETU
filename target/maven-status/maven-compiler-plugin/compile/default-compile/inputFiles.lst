@@ -10,6 +10,7 @@ D:\RailwayManagement\src\main\java\model\Train.java
 D:\RailwayManagement\src\main\java\model\User.java
 D:\RailwayManagement\src\main\java\servlet\AuthenticationFilter.java
 D:\RailwayManagement\src\main\java\servlet\CancelBookingServlet.java
+D:\RailwayManagement\src\main\java\servlet\ForgotPasswordServlet.java
 D:\RailwayManagement\src\main\java\servlet\LoadBookingDataServlet.java
 D:\RailwayManagement\src\main\java\servlet\LoadBookingPageServlet.java
 D:\RailwayManagement\src\main\java\servlet\LoadTrainForUpdateServlet.java
@@ -24,3 +25,4 @@ D:\RailwayManagement\src\main\java\servlet\TrainServlet.java
 D:\RailwayManagement\src\main\java\servlet\UpdateTrainServlet.java
 D:\RailwayManagement\src\main\java\servlet\ViewBookingsServlet.java
 D:\RailwayManagement\src\main\java\servlet\ViewTrainsServlet.java
+D:\RailwayManagement\src\main\java\TestDB.java

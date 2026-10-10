@@ -1,0 +1,427 @@
+2026-05-30T06:28:53.1130471Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:28:57.1624779Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:29:13.7139435Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:29:13.7317377Z Container start method called.
+2026-05-30T06:29:13.7321660Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:29:13.7325150Z Establishing network.
+2026-05-30T06:29:13.7328572Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T06:29:39.9962232Z Image azure-app-service/java:17.0.17-r260110 is pulled from registry 10.1.0.5:13209
+2026-05-30T06:29:40.0141283Z Container is starting.
+2026-05-30T06:29:40.0753679Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:29:40.0771559Z Establishing user namespace if not established already.
+2026-05-30T06:29:40.0784458Z Establishing network if not established already.
+2026-05-30T06:29:40.0804482Z Mounting volumes.
+2026-05-30T06:29:40.0887249Z Nested mountpoint site/wwwroot
+2026-05-30T06:29:40.1184776Z Nested mountpoint volatile/logs
+2026-05-30T06:29:40.1544564Z Nested mountpoint 
+2026-05-30T06:29:40.2302326Z Nested mountpoint 
+2026-05-30T06:29:40.3705625Z Nested mountpoint 
+2026-05-30T06:29:40.4098440Z Nested mountpoint 
+2026-05-30T06:29:40.6247281Z Skipping optional volume mount 'Package' at /home/site/wwwroot.
+2026-05-30T06:29:40.8154065Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T06:29:40.8156004Z Creating container.
+2026-05-30T06:29:40.8160942Z Creating pipes for streaming container io.
+2026-05-30T06:29:40.8169753Z Creating stdout named pipe at /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06.
+2026-05-30T06:29:40.8254418Z Successfully created stdout named pipe at: /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06.
+2026-05-30T06:29:40.8260498Z Opening named pipe /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06 for reading in non-blocking mode.
+2026-05-30T06:29:40.8266551Z Successfully opened named pipe: /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06.
+2026-05-30T06:29:40.8273624Z Successfully removed non-blocking flag from /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06.
+2026-05-30T06:29:40.8362333Z Creating stderr named pipe at /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1.
+2026-05-30T06:29:40.8368871Z Successfully created stderr named pipe at: /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1.
+2026-05-30T06:29:40.8374972Z Opening named pipe /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1 for reading in non-blocking mode.
+2026-05-30T06:29:40.8454088Z Successfully opened named pipe: /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1.
+2026-05-30T06:29:40.8457202Z Successfully removed non-blocking flag from /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1.
+2026-05-30T06:29:40.8458900Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T06:29:41.6975118Z Starting container: ee79048f7932_railway-app-e7bhahbshp6ca.
+2026-05-30T06:29:41.8986648Z Starting watchers and probes.
+2026-05-30T06:29:41.9691849Z Starting metrics collection.
+2026-05-30T06:29:41.9710724Z Container is running.
+2026-05-30T06:29:41.9712184Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:29:42.3908890Z Container start method finished after 28629 ms.
+2026-05-30T06:29:42.3922229Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:29:42.4310173Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T06:30:51.3389498Z Site startup probe succeeded after 68.8257367 seconds.
+2026-05-30T06:30:51.7180010Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 68.8257367 seconds., DetailsLevel: INFO
+2026-05-30T06:30:52.5389406Z Site started.
+2026-05-30T06:30:52.5393784Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:30:52 (UTC), DetailsLevel: INFO
+2026-05-30T06:30:53.1500191Z Site is running with patch version JAVA 17.0.17
+2026-05-30T06:32:46.3959335Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:32:49.6642593Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:33:03.7136405Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:33:03.7141047Z Container start method called.
+2026-05-30T06:33:03.7143860Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:33:03.7629833Z Establishing network.
+2026-05-30T06:33:03.7632688Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T06:33:04.1254149Z Container is starting.
+2026-05-30T06:33:04.1255421Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:33:04.1257289Z Establishing user namespace if not established already.
+2026-05-30T06:33:04.1268040Z Establishing network if not established already.
+2026-05-30T06:33:04.1270693Z Mounting volumes.
+2026-05-30T06:33:04.1352083Z Nested mountpoint site/wwwroot
+2026-05-30T06:33:04.2554846Z Nested mountpoint volatile/logs
+2026-05-30T06:33:04.2950086Z Nested mountpoint 
+2026-05-30T06:33:04.2962523Z Nested mountpoint 
+2026-05-30T06:33:04.3257363Z Nested mountpoint 
+2026-05-30T06:33:04.3382865Z Nested mountpoint 
+2026-05-30T06:33:04.7710468Z Skipping optional volume mount 'Package' at /home/site/wwwroot.
+2026-05-30T06:33:05.0632143Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T06:33:05.0691114Z Creating container.
+2026-05-30T06:33:05.0692567Z Creating pipes for streaming container io.
+2026-05-30T06:33:05.0693723Z Creating stdout named pipe at /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9.
+2026-05-30T06:33:05.0696250Z Successfully created stdout named pipe at: /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9.
+2026-05-30T06:33:05.0697614Z Opening named pipe /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9 for reading in non-blocking mode.
+2026-05-30T06:33:05.0698911Z Successfully opened named pipe: /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9.
+2026-05-30T06:33:05.0700035Z Successfully removed non-blocking flag from /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9.
+2026-05-30T06:33:05.0710999Z Creating stderr named pipe at /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1.
+2026-05-30T06:33:05.0713440Z Successfully created stderr named pipe at: /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1.
+2026-05-30T06:33:05.0714602Z Opening named pipe /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1 for reading in non-blocking mode.
+2026-05-30T06:33:05.0715866Z Successfully opened named pipe: /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1.
+2026-05-30T06:33:05.0717765Z Successfully removed non-blocking flag from /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1.
+2026-05-30T06:33:05.0720959Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T06:33:06.0483045Z Starting container: 75aed0b22266_railway-app-e7bhahbshp6ca.
+2026-05-30T06:33:06.5135273Z Starting watchers and probes.
+2026-05-30T06:33:06.5526458Z Starting metrics collection.
+2026-05-30T06:33:06.5531834Z Container is running.
+2026-05-30T06:33:06.5625399Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:33:06.8240209Z Container start method finished after 3109 ms.
+2026-05-30T06:33:06.8246273Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:33:06.8246830Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T06:34:21.8159690Z Site startup probe succeeded after 74.9898627 seconds.
+2026-05-30T06:34:22.1175538Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 74.9898627 seconds., DetailsLevel: INFO
+2026-05-30T06:34:22.7579678Z Site started.
+2026-05-30T06:34:22.7587701Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:34:22 (UTC), DetailsLevel: INFO
+2026-05-30T06:34:22.7592726Z Site is running with patch version JAVA 17.0.17
+2026-05-30T06:34:43.8180577Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:30:52 (UTC), DetailsLevel: INFO
+2026-05-30T06:34:43.8401375Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:30:52 (UTC), DetailsLevel: INFO
+2026-05-30T06:34:43.8487619Z Container is terminating. Grace period: 5 seconds.
+2026-05-30T06:34:43.9181339Z Stop and delete container. Retry count = 0
+2026-05-30T06:34:43.9287055Z Stopping container: ee79048f7932_railway-app-e7bhahbshp6ca.
+2026-05-30T06:34:44.5933813Z Deleting container: ee79048f7932_railway-app-e7bhahbshp6ca. Retry count = 0
+2026-05-30T06:34:44.8771692Z Container spec TerminationMessagePolicy  path 
+2026-05-30T06:34:44.8893609Z Container is terminated. Total time elapsed: 1039 ms.
+2026-05-30T06:34:45.3700874Z Site: railway-app-e7bhahbshp6ca stopped.
+2026-05-30T06:48:48.3871919Z Update mount on running container.
+2026-05-30T06:48:49.6133155Z Container failed to remount volume. Terminate.
+2026-05-30T06:48:49.6139024Z Container is terminating. Grace period: 5 seconds.
+2026-05-30T06:48:49.6747492Z Stop and delete container. Retry count = 0
+2026-05-30T06:48:49.6750105Z Stopping container: 75aed0b22266_railway-app-e7bhahbshp6ca.
+2026-05-30T06:48:52.1883764Z Deleting container: 75aed0b22266_railway-app-e7bhahbshp6ca. Retry count = 0
+2026-05-30T06:48:53.5712574Z Container spec TerminationMessagePolicy  path 
+2026-05-30T06:48:53.5721554Z Container is terminated. Total time elapsed: 3957 ms.
+2026-05-30T06:48:53.6604411Z Site container: railway-app-e7bhahbshp6ca terminated. Stopping the entire site.
+2026-05-30T06:48:53.7798446Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:34:22 (UTC), DetailsLevel: INFO
+2026-05-30T06:48:54.1903471Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:34:22 (UTC), DetailsLevel: INFO
+2026-05-30T06:48:55.4484859Z Site: railway-app-e7bhahbshp6ca stopped.
+2026-05-30T06:48:55.4575092Z State: Stopping, Action: UnmountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:34:22 (UTC), DetailsLevel: INFO
+2026-05-30T06:48:55.9142759Z State: Stopping, Action: StoppingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:34:22 (UTC), DetailsLevel: INFO
+2026-05-30T06:48:56.6792030Z State: Stopped, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site stopped at 05/30/2026 06:48:56 (UTC), DetailsLevel: INFO
+2026-05-30T06:48:56.9585296Z State: Stopped, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site stopped at 05/30/2026 06:48:56 (UTC), DetailsLevel: INFO
+2026-05-30T06:49:49.2737346Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site stopped at 05/30/2026 06:48:56 (UTC), DetailsLevel: INFO
+2026-05-30T06:49:52.1767686Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site stopped at 05/30/2026 06:48:56 (UTC), DetailsLevel: INFO
+2026-05-30T06:50:11.2892452Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site stopped at 05/30/2026 06:48:56 (UTC), DetailsLevel: INFO
+2026-05-30T06:50:11.2895390Z Container start method called.
+2026-05-30T06:50:11.2905727Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:50:11.2907375Z Establishing network.
+2026-05-30T06:50:11.2908609Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T06:50:11.5472918Z Container is starting.
+2026-05-30T06:50:11.5544326Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:50:11.5556194Z Establishing user namespace if not established already.
+2026-05-30T06:50:11.5559395Z Establishing network if not established already.
+2026-05-30T06:50:11.5566146Z Mounting volumes.
+2026-05-30T06:50:11.5646169Z Nested mountpoint site/wwwroot
+2026-05-30T06:50:11.5851009Z Nested mountpoint volatile/logs
+2026-05-30T06:50:11.6476776Z Nested mountpoint 
+2026-05-30T06:50:11.6863325Z Nested mountpoint 
+2026-05-30T06:50:11.7161194Z Nested mountpoint 
+2026-05-30T06:50:11.7368835Z Nested mountpoint 
+2026-05-30T06:50:12.4224431Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T06:50:12.4226153Z Creating container.
+2026-05-30T06:50:12.4227007Z Creating pipes for streaming container io.
+2026-05-30T06:50:12.4227852Z Creating stdout named pipe at /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stdout_8176af461ebe414ab54984c240a2d2ce.
+2026-05-30T06:50:12.4229582Z Successfully created stdout named pipe at: /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stdout_8176af461ebe414ab54984c240a2d2ce.
+2026-05-30T06:50:12.4230332Z Opening named pipe /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stdout_8176af461ebe414ab54984c240a2d2ce for reading in non-blocking mode.
+2026-05-30T06:50:12.4231252Z Successfully opened named pipe: /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stdout_8176af461ebe414ab54984c240a2d2ce.
+2026-05-30T06:50:12.4231985Z Successfully removed non-blocking flag from /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stdout_8176af461ebe414ab54984c240a2d2ce.
+2026-05-30T06:50:12.4435581Z Creating stderr named pipe at /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stderr_3af16c4075e2407eb79c10ba303280a3.
+2026-05-30T06:50:12.4445418Z Successfully created stderr named pipe at: /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stderr_3af16c4075e2407eb79c10ba303280a3.
+2026-05-30T06:50:12.4447788Z Opening named pipe /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stderr_3af16c4075e2407eb79c10ba303280a3 for reading in non-blocking mode.
+2026-05-30T06:50:12.4452995Z Successfully opened named pipe: /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stderr_3af16c4075e2407eb79c10ba303280a3.
+2026-05-30T06:50:12.4457432Z Successfully removed non-blocking flag from /podr/container/pipe/6a70255a2f48_railway-app-e7bhahbshp6ca/stderr_3af16c4075e2407eb79c10ba303280a3.
+2026-05-30T06:50:12.4531110Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T06:50:13.0165759Z Starting container: 6a70255a2f48_railway-app-e7bhahbshp6ca.
+2026-05-30T06:50:13.0997468Z Starting watchers and probes.
+2026-05-30T06:50:13.1187561Z Starting metrics collection.
+2026-05-30T06:50:13.1196985Z Container is running.
+2026-05-30T06:50:13.1280280Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:50:13.3968524Z Container start method finished after 2106 ms.
+2026-05-30T06:50:13.4458075Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:50:13.4462326Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T06:51:17.1655525Z Container has finished running with exit code: 0.
+2026-05-30T06:51:17.1673041Z Container is terminating. Grace period: 5 seconds.
+2026-05-30T06:51:17.2033686Z Stop and delete container. Retry count = 0
+2026-05-30T06:51:17.2060717Z Stopping container: 6a70255a2f48_railway-app-e7bhahbshp6ca.
+2026-05-30T06:51:17.2859593Z Deleting container: 6a70255a2f48_railway-app-e7bhahbshp6ca. Retry count = 0
+2026-05-30T06:51:17.5472563Z Container spec TerminationMessagePolicy  path 
+2026-05-30T06:51:17.5474741Z Container is terminated. Total time elapsed: 363 ms.
+2026-05-30T06:51:17.5475691Z Site container: railway-app-e7bhahbshp6ca terminated during site startup.
+2026-05-30T06:51:17.5713362Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:51:17.5990329Z Site startup probe failed after 64.1421885 seconds.
+2026-05-30T06:51:17.8311776Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:51:17.8485067Z Failed to start site. Revert by stopping site.
+2026-05-30T06:51:17.8492669Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:51:17.8505931Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:51:18.3126007Z Site container: railway-app-e7bhahbshp6ca_managedIdentity terminated during site startup.
+2026-05-30T06:51:18.3134192Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:51:18.3136809Z Site: railway-app-e7bhahbshp6ca stopped.
+2026-05-30T06:51:18.3244928Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:51:18.8622939Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:51:19.2044975Z Site: railway-app-e7bhahbshp6ca will be blocked for 1 minutes till 05/30/2026 06:52:19
+2026-05-30T06:51:19.2046964Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: railway-app-e7bhahbshp6ca will be blocked for 1 minutes till 05/30/2026 06:52:19, DetailsLevel: WARN
+2026-05-30T06:51:19.2666776Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:51:19 (UTC), DetailsLevel: WARN
+2026-05-30T06:51:19.7188738Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:51:19 (UTC), DetailsLevel: WARN
+2026-05-30T06:52:19.2396896Z Site: railway-app-e7bhahbshp6ca is unblocked.
+2026-05-30T06:53:23.3044005Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:51:19 (UTC), DetailsLevel: WARN
+2026-05-30T06:53:25.5903132Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:51:19 (UTC), DetailsLevel: WARN
+2026-05-30T06:53:37.9329572Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:51:19 (UTC), DetailsLevel: WARN
+2026-05-30T06:53:37.9330670Z Container start method called.
+2026-05-30T06:53:37.9331184Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:53:37.9331993Z Establishing network.
+2026-05-30T06:53:37.9332922Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T06:53:38.3403311Z Container is starting.
+2026-05-30T06:53:38.3404354Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:53:38.3405145Z Establishing user namespace if not established already.
+2026-05-30T06:53:38.3407258Z Establishing network if not established already.
+2026-05-30T06:53:38.3410315Z Mounting volumes.
+2026-05-30T06:53:38.3413602Z Nested mountpoint site/wwwroot
+2026-05-30T06:53:38.4510409Z Nested mountpoint volatile/logs
+2026-05-30T06:53:38.5006675Z Nested mountpoint 
+2026-05-30T06:53:38.5515616Z Nested mountpoint 
+2026-05-30T06:53:38.7131964Z Nested mountpoint 
+2026-05-30T06:53:38.7423244Z Nested mountpoint 
+2026-05-30T06:53:39.7159673Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T06:53:39.7160971Z Creating container.
+2026-05-30T06:53:39.7161907Z Creating pipes for streaming container io.
+2026-05-30T06:53:39.7162665Z Creating stdout named pipe at /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stdout_11bc8cc4b8834de098a4f7dea56f865f.
+2026-05-30T06:53:39.7164937Z Successfully created stdout named pipe at: /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stdout_11bc8cc4b8834de098a4f7dea56f865f.
+2026-05-30T06:53:39.7165686Z Opening named pipe /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stdout_11bc8cc4b8834de098a4f7dea56f865f for reading in non-blocking mode.
+2026-05-30T06:53:39.7166578Z Successfully opened named pipe: /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stdout_11bc8cc4b8834de098a4f7dea56f865f.
+2026-05-30T06:53:39.7765572Z Successfully removed non-blocking flag from /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stdout_11bc8cc4b8834de098a4f7dea56f865f.
+2026-05-30T06:53:39.7863615Z Creating stderr named pipe at /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stderr_a21ded9faa7843008e870da4e1ff05f7.
+2026-05-30T06:53:39.7873344Z Successfully created stderr named pipe at: /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stderr_a21ded9faa7843008e870da4e1ff05f7.
+2026-05-30T06:53:39.7880019Z Opening named pipe /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stderr_a21ded9faa7843008e870da4e1ff05f7 for reading in non-blocking mode.
+2026-05-30T06:53:39.7954400Z Successfully opened named pipe: /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stderr_a21ded9faa7843008e870da4e1ff05f7.
+2026-05-30T06:53:39.7955422Z Successfully removed non-blocking flag from /podr/container/pipe/af67dc6175af_railway-app-e7bhahbshp6ca/stderr_a21ded9faa7843008e870da4e1ff05f7.
+2026-05-30T06:53:39.7956925Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T06:53:40.3566146Z Starting container: af67dc6175af_railway-app-e7bhahbshp6ca.
+2026-05-30T06:53:40.5090114Z Starting watchers and probes.
+2026-05-30T06:53:40.5099829Z Starting metrics collection.
+2026-05-30T06:53:40.5189589Z Container is running.
+2026-05-30T06:53:40.5203688Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:53:40.7526779Z Container start method finished after 2819 ms.
+2026-05-30T06:53:40.7528853Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:53:40.7529096Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T06:54:41.7180168Z Container has finished running with exit code: 0.
+2026-05-30T06:54:41.7194459Z Container is terminating. Grace period: 5 seconds.
+2026-05-30T06:54:41.7572985Z Stop and delete container. Retry count = 0
+2026-05-30T06:54:41.7577496Z Stopping container: af67dc6175af_railway-app-e7bhahbshp6ca.
+2026-05-30T06:54:41.8581512Z Deleting container: af67dc6175af_railway-app-e7bhahbshp6ca. Retry count = 0
+2026-05-30T06:54:42.0720225Z Container spec TerminationMessagePolicy  path 
+2026-05-30T06:54:42.0797494Z Container is terminated. Total time elapsed: 352 ms.
+2026-05-30T06:54:42.0799036Z Site container: railway-app-e7bhahbshp6ca terminated during site startup.
+2026-05-30T06:54:42.0803623Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:51:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:54:42.1316484Z Site startup probe failed after 61.3489803 seconds.
+2026-05-30T06:54:42.3515890Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:54:42.3812218Z Failed to start site. Revert by stopping site.
+2026-05-30T06:54:42.3814521Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:54:42.3822568Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:54:42.8849173Z Site container: railway-app-e7bhahbshp6ca_managedIdentity terminated during site startup.
+2026-05-30T06:54:42.8853016Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:54:42.8855068Z Site: railway-app-e7bhahbshp6ca stopped.
+2026-05-30T06:54:42.9230648Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:54:43.8274330Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:54:44.1714177Z Site: railway-app-e7bhahbshp6ca will be blocked for 1 minutes till 05/30/2026 06:55:44
+2026-05-30T06:54:44.2195616Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: railway-app-e7bhahbshp6ca will be blocked for 1 minutes till 05/30/2026 06:55:44, DetailsLevel: WARN
+2026-05-30T06:54:44.2210818Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:54:44 (UTC), DetailsLevel: WARN
+2026-05-30T06:54:44.7111239Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:54:44 (UTC), DetailsLevel: WARN
+2026-05-30T06:55:44.1732108Z Site: railway-app-e7bhahbshp6ca is unblocked.
+2026-05-30T06:58:29.8069221Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:54:44 (UTC), DetailsLevel: WARN
+2026-05-30T06:58:32.2053061Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:54:44 (UTC), DetailsLevel: WARN
+2026-05-30T06:58:45.8564894Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:54:44 (UTC), DetailsLevel: WARN
+2026-05-30T06:58:45.8566025Z Container start method called.
+2026-05-30T06:58:45.8566542Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:58:45.8567494Z Establishing network.
+2026-05-30T06:58:45.8568374Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T06:58:46.1841823Z Container is starting.
+2026-05-30T06:58:46.1849484Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:58:46.1851256Z Establishing user namespace if not established already.
+2026-05-30T06:58:46.1853625Z Establishing network if not established already.
+2026-05-30T06:58:46.1854754Z Mounting volumes.
+2026-05-30T06:58:46.1856911Z Nested mountpoint site/wwwroot
+2026-05-30T06:58:46.2262578Z Nested mountpoint volatile/logs
+2026-05-30T06:58:46.3235633Z Nested mountpoint 
+2026-05-30T06:58:46.3461680Z Nested mountpoint 
+2026-05-30T06:58:46.3666504Z Nested mountpoint 
+2026-05-30T06:58:46.3852114Z Nested mountpoint 
+2026-05-30T06:58:47.1463477Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T06:58:47.1471861Z Creating container.
+2026-05-30T06:58:47.1473777Z Creating pipes for streaming container io.
+2026-05-30T06:58:47.1475089Z Creating stdout named pipe at /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stdout_f638b964182d4031b7cd7ac1219e994f.
+2026-05-30T06:58:47.1477655Z Successfully created stdout named pipe at: /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stdout_f638b964182d4031b7cd7ac1219e994f.
+2026-05-30T06:58:47.1480809Z Opening named pipe /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stdout_f638b964182d4031b7cd7ac1219e994f for reading in non-blocking mode.
+2026-05-30T06:58:47.1486565Z Successfully opened named pipe: /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stdout_f638b964182d4031b7cd7ac1219e994f.
+2026-05-30T06:58:47.1489153Z Successfully removed non-blocking flag from /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stdout_f638b964182d4031b7cd7ac1219e994f.
+2026-05-30T06:58:47.1491239Z Creating stderr named pipe at /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stderr_7290b7d9a4354ab493d5cc3d04f19713.
+2026-05-30T06:58:47.1589349Z Successfully created stderr named pipe at: /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stderr_7290b7d9a4354ab493d5cc3d04f19713.
+2026-05-30T06:58:47.1591382Z Opening named pipe /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stderr_7290b7d9a4354ab493d5cc3d04f19713 for reading in non-blocking mode.
+2026-05-30T06:58:47.1593104Z Successfully opened named pipe: /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stderr_7290b7d9a4354ab493d5cc3d04f19713.
+2026-05-30T06:58:47.1594170Z Successfully removed non-blocking flag from /podr/container/pipe/b8fa1150d983_railway-app-e7bhahbshp6ca/stderr_7290b7d9a4354ab493d5cc3d04f19713.
+2026-05-30T06:58:47.1598458Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T06:58:47.6900788Z Starting container: b8fa1150d983_railway-app-e7bhahbshp6ca.
+2026-05-30T06:58:47.7982186Z Starting watchers and probes.
+2026-05-30T06:58:47.8082968Z Starting metrics collection.
+2026-05-30T06:58:47.8098470Z Container is running.
+2026-05-30T06:58:47.8099842Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:58:48.0970137Z Container start method finished after 2240 ms.
+2026-05-30T06:58:48.0972208Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:58:48.0972444Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T06:59:46.9923660Z Container has finished running with exit code: 0.
+2026-05-30T06:59:46.9930808Z Container is terminating. Grace period: 5 seconds.
+2026-05-30T06:59:47.0013325Z Stop and delete container. Retry count = 0
+2026-05-30T06:59:47.0015137Z Stopping container: b8fa1150d983_railway-app-e7bhahbshp6ca.
+2026-05-30T06:59:47.0732682Z Deleting container: b8fa1150d983_railway-app-e7bhahbshp6ca. Retry count = 0
+2026-05-30T06:59:47.3629805Z Container spec TerminationMessagePolicy  path 
+2026-05-30T06:59:47.3645756Z Container is terminated. Total time elapsed: 370 ms.
+2026-05-30T06:59:47.3653311Z Site container: railway-app-e7bhahbshp6ca terminated during site startup.
+2026-05-30T06:59:47.3659254Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:54:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:59:47.3957852Z Site startup probe failed after 59.2898424 seconds.
+2026-05-30T06:59:47.6111159Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:59:47.6124740Z Failed to start site. Revert by stopping site.
+2026-05-30T06:59:47.6295380Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:59:47.6307290Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:59:48.0412104Z Site container: railway-app-e7bhahbshp6ca_managedIdentity terminated during site startup.
+2026-05-30T06:59:48.0487392Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:59:48.0490397Z Site: railway-app-e7bhahbshp6ca stopped.
+2026-05-30T06:59:48.0779811Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:59:48.6678445Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T06:59:48.9618550Z Site: railway-app-e7bhahbshp6ca will be blocked for 2 minutes till 05/30/2026 07:01:48
+2026-05-30T06:59:48.9626828Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: railway-app-e7bhahbshp6ca will be blocked for 2 minutes till 05/30/2026 07:01:48, DetailsLevel: WARN
+2026-05-30T06:59:48.9715970Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:59:48 (UTC), DetailsLevel: WARN
+2026-05-30T06:59:49.3065961Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:59:48 (UTC), DetailsLevel: WARN
+2026-05-30T07:01:48.9636739Z Site: railway-app-e7bhahbshp6ca is unblocked.
+2026-05-30T07:02:40.0306170Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:59:48 (UTC), DetailsLevel: WARN
+2026-05-30T07:02:42.4161644Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:59:48 (UTC), DetailsLevel: WARN
+2026-05-30T07:02:52.4675999Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 06:59:48 (UTC), DetailsLevel: WARN
+2026-05-30T07:02:52.4680944Z Container start method called.
+2026-05-30T07:02:52.4684560Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T07:02:52.4686492Z Establishing network.
+2026-05-30T07:02:52.4694040Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T07:02:52.7232807Z Container is starting.
+2026-05-30T07:02:52.7251811Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T07:02:52.7344483Z Establishing user namespace if not established already.
+2026-05-30T07:02:52.7352624Z Establishing network if not established already.
+2026-05-30T07:02:52.7430143Z Mounting volumes.
+2026-05-30T07:02:52.7449595Z Nested mountpoint site/wwwroot
+2026-05-30T07:02:52.7728877Z Nested mountpoint volatile/logs
+2026-05-30T07:02:52.8130936Z Nested mountpoint 
+2026-05-30T07:02:52.8151402Z Nested mountpoint 
+2026-05-30T07:02:52.8842447Z Nested mountpoint 
+2026-05-30T07:02:52.8942333Z Nested mountpoint 
+2026-05-30T07:02:53.5831002Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T07:02:53.5833619Z Creating container.
+2026-05-30T07:02:53.5837735Z Creating pipes for streaming container io.
+2026-05-30T07:02:53.5842185Z Creating stdout named pipe at /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stdout_335e423ac99046e6a4e96b03285890eb.
+2026-05-30T07:02:53.5845738Z Successfully created stdout named pipe at: /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stdout_335e423ac99046e6a4e96b03285890eb.
+2026-05-30T07:02:53.5923861Z Opening named pipe /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stdout_335e423ac99046e6a4e96b03285890eb for reading in non-blocking mode.
+2026-05-30T07:02:53.5926923Z Successfully opened named pipe: /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stdout_335e423ac99046e6a4e96b03285890eb.
+2026-05-30T07:02:53.5928769Z Successfully removed non-blocking flag from /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stdout_335e423ac99046e6a4e96b03285890eb.
+2026-05-30T07:02:53.5932440Z Creating stderr named pipe at /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stderr_03deb5677283414b84f69d39d2567371.
+2026-05-30T07:02:53.5936294Z Successfully created stderr named pipe at: /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stderr_03deb5677283414b84f69d39d2567371.
+2026-05-30T07:02:53.6031788Z Opening named pipe /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stderr_03deb5677283414b84f69d39d2567371 for reading in non-blocking mode.
+2026-05-30T07:02:53.6037645Z Successfully opened named pipe: /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stderr_03deb5677283414b84f69d39d2567371.
+2026-05-30T07:02:53.6043050Z Successfully removed non-blocking flag from /podr/container/pipe/6ab13f76c990_railway-app-e7bhahbshp6ca/stderr_03deb5677283414b84f69d39d2567371.
+2026-05-30T07:02:53.6124933Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T07:02:54.4044523Z Starting container: 6ab13f76c990_railway-app-e7bhahbshp6ca.
+2026-05-30T07:02:54.4923192Z Starting watchers and probes.
+2026-05-30T07:02:54.5025337Z Starting metrics collection.
+2026-05-30T07:02:54.5038697Z Container is running.
+2026-05-30T07:02:54.5299016Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T07:02:54.7183257Z Container start method finished after 2249 ms.
+2026-05-30T07:02:54.7191859Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T07:02:54.7192478Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T07:03:53.3011073Z Container has finished running with exit code: 0.
+2026-05-30T07:03:53.3013002Z Container is terminating. Grace period: 5 seconds.
+2026-05-30T07:03:53.3025143Z Stop and delete container. Retry count = 0
+2026-05-30T07:03:53.3197492Z Stopping container: 6ab13f76c990_railway-app-e7bhahbshp6ca.
+2026-05-30T07:03:53.3908024Z Deleting container: 6ab13f76c990_railway-app-e7bhahbshp6ca. Retry count = 0
+2026-05-30T07:03:53.6186804Z Container spec TerminationMessagePolicy  path 
+2026-05-30T07:03:53.6267369Z Container is terminated. Total time elapsed: 324 ms.
+2026-05-30T07:03:53.6276073Z Site container: railway-app-e7bhahbshp6ca terminated during site startup.
+2026-05-30T07:03:53.6453364Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 06:59:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:03:53.7880078Z Site startup probe failed after 59.0492274 seconds.
+2026-05-30T07:03:54.1160816Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:03:54.1262806Z Failed to start site. Revert by stopping site.
+2026-05-30T07:03:54.1264878Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:03:54.1267741Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:03:54.6239753Z Site container: railway-app-e7bhahbshp6ca_managedIdentity terminated during site startup.
+2026-05-30T07:03:54.6260200Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:03:54.6338700Z Site: railway-app-e7bhahbshp6ca stopped.
+2026-05-30T07:08:40.4166170Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 07:03:55 (UTC), DetailsLevel: WARN
+2026-05-30T07:08:42.9448930Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 07:03:55 (UTC), DetailsLevel: WARN
+2026-05-30T07:08:52.7071114Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 07:03:55 (UTC), DetailsLevel: WARN
+2026-05-30T07:08:52.7072226Z Container start method called.
+2026-05-30T07:08:52.7072685Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T07:08:52.7073517Z Establishing network.
+2026-05-30T07:08:52.7074504Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T07:08:53.0209262Z Image azure-app-service/java:17.0.17-r260110 is pulled from registry 10.1.0.4:13209
+2026-05-30T07:08:53.0220219Z Container is starting.
+2026-05-30T07:08:53.0227624Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T07:08:53.0245528Z Establishing user namespace if not established already.
+2026-05-30T07:08:53.0247659Z Establishing network if not established already.
+2026-05-30T07:08:53.0315058Z Mounting volumes.
+2026-05-30T07:08:53.0319991Z Nested mountpoint site/wwwroot
+2026-05-30T07:08:53.0522461Z Nested mountpoint volatile/logs
+2026-05-30T07:08:53.1103415Z Nested mountpoint 
+2026-05-30T07:08:53.1520863Z Nested mountpoint 
+2026-05-30T07:08:53.2088347Z Nested mountpoint 
+2026-05-30T07:08:53.2282472Z Nested mountpoint 
+2026-05-30T07:08:54.7400430Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T07:08:54.7404678Z Creating container.
+2026-05-30T07:08:54.7406122Z Creating pipes for streaming container io.
+2026-05-30T07:08:54.7407815Z Creating stdout named pipe at /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stdout_0b0c693434b4446ca05dc5278b5716e6.
+2026-05-30T07:08:54.7410789Z Successfully created stdout named pipe at: /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stdout_0b0c693434b4446ca05dc5278b5716e6.
+2026-05-30T07:08:54.7411940Z Opening named pipe /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stdout_0b0c693434b4446ca05dc5278b5716e6 for reading in non-blocking mode.
+2026-05-30T07:08:54.7417700Z Successfully opened named pipe: /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stdout_0b0c693434b4446ca05dc5278b5716e6.
+2026-05-30T07:08:54.7419108Z Successfully removed non-blocking flag from /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stdout_0b0c693434b4446ca05dc5278b5716e6.
+2026-05-30T07:08:54.7427860Z Creating stderr named pipe at /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stderr_04ba1d195e484601a7bbe9a28f178da3.
+2026-05-30T07:08:54.7722009Z Successfully created stderr named pipe at: /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stderr_04ba1d195e484601a7bbe9a28f178da3.
+2026-05-30T07:08:54.7729423Z Opening named pipe /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stderr_04ba1d195e484601a7bbe9a28f178da3 for reading in non-blocking mode.
+2026-05-30T07:08:54.7825944Z Successfully opened named pipe: /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stderr_04ba1d195e484601a7bbe9a28f178da3.
+2026-05-30T07:08:54.7901503Z Successfully removed non-blocking flag from /podr/container/pipe/bf4f8a348e0a_railway-app-e7bhahbshp6ca/stderr_04ba1d195e484601a7bbe9a28f178da3.
+2026-05-30T07:08:54.7913395Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T07:08:55.4411070Z Starting container: bf4f8a348e0a_railway-app-e7bhahbshp6ca.
+2026-05-30T07:08:55.5039144Z Starting watchers and probes.
+2026-05-30T07:08:55.5042713Z Starting metrics collection.
+2026-05-30T07:08:55.5133490Z Container is running.
+2026-05-30T07:08:55.5134957Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T07:08:55.6252764Z Container start method finished after 2917 ms.
+2026-05-30T07:08:55.6526887Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T07:08:55.6527873Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T07:09:53.2878069Z Container has finished running with exit code: 0.
+2026-05-30T07:09:53.2886264Z Container is terminating. Grace period: 5 seconds.
+2026-05-30T07:09:53.3061967Z Stop and delete container. Retry count = 0
+2026-05-30T07:09:53.3074563Z Stopping container: bf4f8a348e0a_railway-app-e7bhahbshp6ca.
+2026-05-30T07:09:53.4072880Z Deleting container: bf4f8a348e0a_railway-app-e7bhahbshp6ca. Retry count = 0
+2026-05-30T07:09:53.7895279Z Container spec TerminationMessagePolicy  path 
+2026-05-30T07:09:53.7900439Z Container is terminated. Total time elapsed: 501 ms.
+2026-05-30T07:09:53.7902675Z Site container: railway-app-e7bhahbshp6ca terminated during site startup.
+2026-05-30T07:09:53.7904967Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:03:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:09:54.2965131Z Site startup probe failed after 58.6426296 seconds.
+2026-05-30T07:09:54.5204775Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:09:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:09:54.5789714Z Failed to start site. Revert by stopping site.
+2026-05-30T07:09:54.5800084Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:09:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:09:54.5886897Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:09:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:09:55.1066038Z Site container: railway-app-e7bhahbshp6ca_managedIdentity terminated during site startup.
+2026-05-30T07:09:55.1072861Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:09:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: railway-app-e7bhahbshp6ca terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-30T07:09:55.1074848Z Site: railway-app-e7bhahbshp6ca stopped.
+2026-05-30T07:10:34.7423898Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:09:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 07:09:55 (UTC), DetailsLevel: ERR
+2026-05-30T07:10:37.8997628Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/30/2026 07:09:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/30/2026 07:09:55 (UTC), DetailsLevel: ERR

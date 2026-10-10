@@ -135,4 +135,28 @@ public User getUserById(int userId) {
             return false;
         }
     }
+
+    /**
+     * Updates the user's password based on email.
+     * Used for the Forgot Password feature.
+     */
+    public boolean updatePassword(String email, String newPassword) throws SQLException {
+        boolean result = false;
+        String hashedPassword = BCrypt.hashpw(newPassword, BCrypt.gensalt());
+        String query = "UPDATE users SET password_hash = ? WHERE email = ?";
+
+        try (Connection con = DBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(query)) {
+
+            ps.setString(1, hashedPassword);
+            ps.setString(2, email);
+
+            int rowsAffected = ps.executeUpdate();
+            result = (rowsAffected > 0);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw e;
+        }
+        return result;
+    }
 }

@@ -1,0 +1,209 @@
+2026-05-30T06:28:53.1130471+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:28:57.1624779+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:29:13.7139435+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:29:13.7317377+00:00 ContainerStatus: Container start method called.
+2026-05-30T06:29:13.7321660+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:29:13.7325150+00:00 ContainerStatus: Establishing network.
+2026-05-30T06:29:13.7328572+00:00 ContainerStatus: Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T06:29:39.9962232+00:00 ContainerStatus: Image azure-app-service/java:17.0.17-r260110 is pulled from registry 10.1.0.5:13209
+2026-05-30T06:29:40.0141283+00:00 ContainerStatus: Container is starting.
+2026-05-30T06:29:40.0753679+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:29:40.0771559+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-05-30T06:29:40.0784458+00:00 ContainerStatus: Establishing network if not established already.
+2026-05-30T06:29:40.0804482+00:00 ContainerStatus: Mounting volumes.
+2026-05-30T06:29:40.0887249+00:00 ContainerStatus: Nested mountpoint site/wwwroot
+2026-05-30T06:29:40.1184776+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-05-30T06:29:40.1544564+00:00 ContainerStatus: Nested mountpoint 
+2026-05-30T06:29:40.2302326+00:00 ContainerStatus: Nested mountpoint 
+2026-05-30T06:29:40.3705625+00:00 ContainerStatus: Nested mountpoint 
+2026-05-30T06:29:40.4098440+00:00 ContainerStatus: Nested mountpoint 
+2026-05-30T06:29:40.6247281+00:00 ContainerStatus: Skipping optional volume mount 'Package' at /home/site/wwwroot.
+2026-05-30T06:29:40.8154065+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T06:29:40.8156004+00:00 ContainerStatus: Creating container.
+2026-05-30T06:29:40.8160942+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-05-30T06:29:40.8169753+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06.
+2026-05-30T06:29:40.8254418+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06.
+2026-05-30T06:29:40.8260498+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06 for reading in non-blocking mode.
+2026-05-30T06:29:40.8266551+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06.
+2026-05-30T06:29:40.8273624+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stdout_3a1cf306bc4740458def9577d7551b06.
+2026-05-30T06:29:40.8362333+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1.
+2026-05-30T06:29:40.8368871+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1.
+2026-05-30T06:29:40.8374972+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1 for reading in non-blocking mode.
+2026-05-30T06:29:40.8454088+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1.
+2026-05-30T06:29:40.8457202+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/ee79048f7932_railway-app-e7bhahbshp6ca/stderr_56f138d7d9f642899a60b7bffc0014f1.
+2026-05-30T06:29:40.8458900+00:00 ContainerStatus: Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T06:29:41.6975118+00:00 ContainerStatus: Starting container: ee79048f7932_railway-app-e7bhahbshp6ca.
+2026-05-30T06:29:41.8986648+00:00 ContainerStatus: Starting watchers and probes.
+2026-05-30T06:29:41.9691849+00:00 ContainerStatus: Starting metrics collection.
+2026-05-30T06:29:41.9710724+00:00 ContainerStatus: Container is running.
+2026-05-30T06:29:41.9712184+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:29:42.0403837+00:00 ContainerStream:    _|_|                                            
+2026-05-30T06:29:42.0411614+00:00 ContainerStream:  _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|    
+2026-05-30T06:29:42.0412007+00:00 ContainerStream:  _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|  
+2026-05-30T06:29:42.0412068+00:00 ContainerStream:  _|    _|    _|      _|    _|  _|        _|        
+2026-05-30T06:29:42.0412263+00:00 ContainerStream:  _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
+2026-05-30T06:29:42.0412428+00:00 ContainerStream: 
+2026-05-30T06:29:42.0412497+00:00 ContainerStream:      J A V A   O N   A P P   S E R V I C E
+2026-05-30T06:29:42.0412526+00:00 ContainerStream: 
+2026-05-30T06:29:42.0412567+00:00 ContainerStream: Documentation: https://aka.ms/appservice
+2026-05-30T06:29:42.0412601+00:00 ContainerStream: 
+2026-05-30T06:29:42.0412775+00:00 ContainerStream: **NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
+2026-05-30T06:29:42.0412809+00:00 ContainerStream: 
+2026-05-30T06:29:42.0412837+00:00 ContainerStream: 
+2026-05-30T06:29:42.0412872+00:00 ContainerStream: Determined OS to be: ubuntu
+2026-05-30T06:29:42.0412915+00:00 ContainerStream: Updating /etc/ssh/sshd_config to use PORT 2222
+2026-05-30T06:29:42.0919389+00:00 ContainerStream: Starting ssh service...
+2026-05-30T06:29:42.3908890+00:00 ContainerStatus: Container start method finished after 28629 ms.
+2026-05-30T06:29:42.3922229+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:29:42.4310173+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T06:29:42.7218125+00:00 ContainerStream: ssh-keygen: generating new host keys: DSA 
+2026-05-30T06:29:42.8533975+00:00 ContainerStream:  * Starting OpenBSD Secure Shell server sshd
+2026-05-30T06:29:42.9212914+00:00 ContainerStream:    ...done.
+2026-05-30T06:29:43.0553704+00:00 ContainerStream:  * sshd is running
+2026-05-30T06:29:43.0712757+00:00 ContainerStream: ## Printing build info...
+2026-05-30T06:29:43.1061228+00:00 ContainerStream:                                            PACKAGE |                             VERSION | COMMIT
+2026-05-30T06:29:43.1062367+00:00 ContainerStream:        Microsoft.AppService.WebsitesExtensionsJava |                        1.0.03290234 | ae284a4
+2026-05-30T06:29:43.1062432+00:00 ContainerStream:                                               self |                        1.0.03296336 | 76247a61
+2026-05-30T06:29:43.1063205+00:00 ContainerStream: ## Done printing build info.
+2026-05-30T06:29:43.1063306+00:00 ContainerStream: Container info: WEBSITE_INSTANCE_ID = b2123a5bf62a7afe140cbc11db1d041e616487abfe26fd9a59900c5dfe235f28 ; WEBSITE_SITE_NAME = railway-app-e7bhahbshp6ca
+2026-05-30T06:29:43.1063352+00:00 ContainerStream: Add public certificates to keystore if exists...
+2026-05-30T06:29:43.1063396+00:00 ContainerStream: Add private certificates to keystore if exists...
+2026-05-30T06:29:43.1063673+00:00 ContainerStream: Configuring max heap = 1299 MB
+2026-05-30T06:29:43.1560755+00:00 ContainerStream: STARTUP_FILE=
+2026-05-30T06:29:43.1571609+00:00 ContainerStream: STARTUP_COMMAND=
+2026-05-30T06:29:43.1655571+00:00 ContainerStream: No STARTUP_FILE available.
+2026-05-30T06:29:43.1656320+00:00 ContainerStream: No STARTUP_COMMAND defined.
+2026-05-30T06:29:43.2754937+00:00 ContainerStream: Could not find an excecutable jar in /home/site/wwwroot/ or any subdirectory. Using default parking page at /usr/local/appservice/parkingpage.jar
+2026-05-30T06:29:43.3348121+00:00 ContainerStream: Picked up JAVA_TOOL_OPTIONS: -javaagent:/agents/java/applicationinsights-agent-codeless.jar
+2026-05-30T06:29:44.3325340+00:00 ContainerStream: OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-05-30T06:30:22.6773607+00:00 ContainerStream: Mangled result from Jar entry point parser is: 2026-05-30 06:29:47.881Z INFO  c.m.a.a.i.c.ConfigurationBuilder - Some telemetry may be sampled out because a default sampling configuration was added in version 3.4.0 to reduce the default billing cost. You can set the sampling configuration explicitly: https://learn.microsoft.com/azure/azure-monitor/app/java-standalone-config#sampling
+2026-05-30T06:30:22.6775017+00:00 ContainerStream: 2026-05-30 06:29:56.344Z WARN  i.o.s.a.ResourceConfiguration - Found reference to io.opentelemetry.sdk.autoconfigure.internal.EnvironmentResourceProvider in otel.java.enabled.resource.providers. Please update to io.opentelemetry.sdk.autoconfigure.EnvironmentResourceProvider. Support for the old provider name will be removed after 1.49.0.
+2026-05-30T06:30:22.6775121+00:00 ContainerStream: 2026-05-30 06:30:20.604Z INFO  c.m.applicationinsights.agent - Application Insights Java Agent 3.7.3 started successfully (PID 48, JVM running for 37.276 s)
+2026-05-30T06:30:22.6775259+00:00 ContainerStream: 2026-05-30 06:30:20.614Z INFO  c.m.applicationinsights.agent - Java version: 17.0.17, vendor: Microsoft, home: /usr/lib/jvm/msopenjdk-17-amd64
+2026-05-30T06:30:22.6775347+00:00 ContainerStream: __COM_MICROSOFT_AZURE_APPSERVICE_JARENTRYPOINT_PREFIX__com.microsoft.azure.appservice.parkingpage.Main__COM_MICROSOFT_AZURE_APPSERVICE_JARENTRYPOINT_SUFFIX__
+2026-05-30T06:30:22.7363933+00:00 ContainerStream: Extracted jar entry point. Class name is: 'com.microsoft.azure.appservice.parkingpage.Main'
+2026-05-30T06:30:22.7673632+00:00 ContainerStream: Running command: java -cp /usr/local/appservice/parkingpage.jar:/usr/local/appservice/lib/azure.appservice.jar: -Djava.util.logging.config.file=/usr/local/appservice/logging.properties -Xmx1299M -Djava.net.preferIPv4Stack=true -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 -Dserver.port=80 -XX:ErrorFile=/home/LogFiles/java_error_railway-app-e7bhahbshp6ca_lw1sdlwk0002ST_%p.log -XX:+CrashOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/LogFiles/java_memdump_railway-app-e7bhahbshp6ca_lw1sdlwk0002ST.log -Duser.dir=/usr/local/appservice com.microsoft.azure.appservice.parkingpage.Main
+2026-05-30T06:30:22.8057924+00:00 ContainerStream: Launched child process with pid: 100
+2026-05-30T06:30:22.8525872+00:00 ContainerStream: [Telemetry] APP_JAR_PATH: /usr/local/appservice/parkingpage.jar:/usr/local/appservice/lib/azure.appservice.jar
+2026-05-30T06:30:22.8526676+00:00 ContainerStream: x-ms-applog:informational:base64:QVBQX0pBUl9QQVRIOiAvdXNyL2xvY2FsL2FwcHNlcnZpY2UvcGFya2luZ3BhZ2UuamFyOi91c3IvbG9jYWwvYXBwc2VydmljZS9saWIvYXp1cmUuYXBwc2VydmljZS5qYXI=
+2026-05-30T06:30:22.8526887+00:00 ContainerStream: x-ms-telemetry:informational:base64:QVBQX0pBUl9QQVRIOiAvdXNyL2xvY2FsL2FwcHNlcnZpY2UvcGFya2luZ3BhZ2UuamFyOi91c3IvbG9jYWwvYXBwc2VydmljZS9saWIvYXp1cmUuYXBwc2VydmljZS5qYXI=
+2026-05-30T06:30:22.9420850+00:00 ContainerStream: Picked up JAVA_TOOL_OPTIONS: -javaagent:/agents/java/applicationinsights-agent-codeless.jar
+2026-05-30T06:30:23.0997114+00:00 ContainerStream: [Telemetry] JARs in /usr/local/appservice/parkingpage.jar: 
+2026-05-30T06:30:23.0998288+00:00 ContainerStream: x-ms-applog:informational:base64:SkFScyBpbiAvdXNyL2xvY2FsL2FwcHNlcnZpY2UvcGFya2luZ3BhZ2UuamFyOiA=
+2026-05-30T06:30:23.0998366+00:00 ContainerStream: x-ms-telemetry:informational:base64:SkFScyBpbiAvdXNyL2xvY2FsL2FwcHNlcnZpY2UvcGFya2luZ3BhZ2UuamFyOiA=
+2026-05-30T06:30:23.0998594+00:00 ContainerStream: Waiting for main process to exit. GLOBAL_PID_MAIN=100
+2026-05-30T06:30:23.0998645+00:00 ContainerStream: Waiting for GLOBAL_PID_MAIN == 100
+2026-05-30T06:30:23.7243305+00:00 ContainerStream: OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-05-30T06:30:26.3609978+00:00 ContainerStream: 2026-05-30 06:30:26.357Z INFO  c.m.a.a.i.c.ConfigurationBuilder - Some telemetry may be sampled out because a default sampling configuration was added in version 3.4.0 to reduce the default billing cost. You can set the sampling configuration explicitly: https://learn.microsoft.com/azure/azure-monitor/app/java-standalone-config#sampling
+2026-05-30T06:30:33.0464213+00:00 ContainerStream: 2026-05-30 06:30:33.038Z WARN  i.o.s.a.ResourceConfiguration - Found reference to io.opentelemetry.sdk.autoconfigure.internal.EnvironmentResourceProvider in otel.java.enabled.resource.providers. Please update to io.opentelemetry.sdk.autoconfigure.EnvironmentResourceProvider. Support for the old provider name will be removed after 1.49.0.
+2026-05-30T06:30:48.6452577+00:00 ContainerStream: 2026-05-30 06:30:48.644Z INFO  c.m.applicationinsights.agent - Application Insights Java Agent 3.7.3 started successfully (PID 100, JVM running for 25.722 s)
+2026-05-30T06:30:48.6635542+00:00 ContainerStream: 2026-05-30 06:30:48.653Z INFO  c.m.applicationinsights.agent - Java version: 17.0.17, vendor: Microsoft, home: /usr/lib/jvm/msopenjdk-17-amd64
+2026-05-30T06:30:51.3389498+00:00 ContainerStatus: Site startup probe succeeded after 68.8257367 seconds.
+2026-05-30T06:30:51.7180010+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 68.8257367 seconds., DetailsLevel: INFO
+2026-05-30T06:30:52.5389406+00:00 ContainerStatus: Site started.
+2026-05-30T06:30:52.5393784+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:30:52 (UTC), DetailsLevel: INFO
+2026-05-30T06:30:53.1500191+00:00 ContainerStatus: Site is running with patch version JAVA 17.0.17
+========== New Cold Start Attempt (2026-05-30T06:32:46.3959335+00:00) ==========
+2026-05-30T06:32:46.3959335+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:32:49.6642593+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:33:03.7136405+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-30T06:33:03.7141047+00:00 ContainerStatus: Container start method called.
+2026-05-30T06:33:03.7143860+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110 for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:33:03.7629833+00:00 ContainerStatus: Establishing network.
+2026-05-30T06:33:03.7632688+00:00 ContainerStatus: Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-05-30T06:33:04.1254149+00:00 ContainerStatus: Container is starting.
+2026-05-30T06:33:04.1255421+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for railway-app-e7bhahbshp6ca., DetailsLevel: INFO
+2026-05-30T06:33:04.1257289+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-05-30T06:33:04.1268040+00:00 ContainerStatus: Establishing network if not established already.
+2026-05-30T06:33:04.1270693+00:00 ContainerStatus: Mounting volumes.
+2026-05-30T06:33:04.1352083+00:00 ContainerStatus: Nested mountpoint site/wwwroot
+2026-05-30T06:33:04.2554846+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-05-30T06:33:04.2950086+00:00 ContainerStatus: Nested mountpoint 
+2026-05-30T06:33:04.2962523+00:00 ContainerStatus: Nested mountpoint 
+2026-05-30T06:33:04.3257363+00:00 ContainerStatus: Nested mountpoint 
+2026-05-30T06:33:04.3382865+00:00 ContainerStatus: Nested mountpoint 
+2026-05-30T06:33:04.7710468+00:00 ContainerStatus: Skipping optional volume mount 'Package' at /home/site/wwwroot.
+2026-05-30T06:33:05.0632143+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for railway-app-e7bhahbshp6ca. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-30T06:33:05.0691114+00:00 ContainerStatus: Creating container.
+2026-05-30T06:33:05.0692567+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-05-30T06:33:05.0693723+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9.
+2026-05-30T06:33:05.0696250+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9.
+2026-05-30T06:33:05.0697614+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9 for reading in non-blocking mode.
+2026-05-30T06:33:05.0698911+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9.
+2026-05-30T06:33:05.0700035+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stdout_f0ad65a57fd1457f81a2d6623cbb40c9.
+2026-05-30T06:33:05.0710999+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1.
+2026-05-30T06:33:05.0713440+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1.
+2026-05-30T06:33:05.0714602+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1 for reading in non-blocking mode.
+2026-05-30T06:33:05.0715866+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1.
+2026-05-30T06:33:05.0717765+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/75aed0b22266_railway-app-e7bhahbshp6ca/stderr_2ccc59ca89474d09adcedd2286e7f7e1.
+2026-05-30T06:33:05.0720959+00:00 ContainerStatus: Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:17.0.17-r260110
+2026-05-30T06:33:06.0483045+00:00 ContainerStatus: Starting container: 75aed0b22266_railway-app-e7bhahbshp6ca.
+2026-05-30T06:33:06.5135273+00:00 ContainerStatus: Starting watchers and probes.
+2026-05-30T06:33:06.5410110+00:00 ContainerStream:    _|_|                                            
+2026-05-30T06:33:06.5526458+00:00 ContainerStatus: Starting metrics collection.
+2026-05-30T06:33:06.5531834+00:00 ContainerStatus: Container is running.
+2026-05-30T06:33:06.5625399+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:33:06.6337758+00:00 ContainerStream:  _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|    
+2026-05-30T06:33:06.6338431+00:00 ContainerStream:  _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|  
+2026-05-30T06:33:06.6338568+00:00 ContainerStream:  _|    _|    _|      _|    _|  _|        _|        
+2026-05-30T06:33:06.6338635+00:00 ContainerStream:  _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
+2026-05-30T06:33:06.6338713+00:00 ContainerStream: 
+2026-05-30T06:33:06.6338797+00:00 ContainerStream:      J A V A   O N   A P P   S E R V I C E
+2026-05-30T06:33:06.6338899+00:00 ContainerStream: 
+2026-05-30T06:33:06.6338954+00:00 ContainerStream: Documentation: https://aka.ms/appservice
+2026-05-30T06:33:06.6339013+00:00 ContainerStream: 
+2026-05-30T06:33:06.6339141+00:00 ContainerStream: **NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
+2026-05-30T06:33:06.6343168+00:00 ContainerStream: 
+2026-05-30T06:33:06.6343406+00:00 ContainerStream: 
+2026-05-30T06:33:06.6343473+00:00 ContainerStream: Determined OS to be: ubuntu
+2026-05-30T06:33:06.6343571+00:00 ContainerStream: Updating /etc/ssh/sshd_config to use PORT 2222
+2026-05-30T06:33:06.6343639+00:00 ContainerStream: Starting ssh service...
+2026-05-30T06:33:06.8240209+00:00 ContainerStatus: Container start method finished after 3109 ms.
+2026-05-30T06:33:06.8246273+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container railway-app-e7bhahbshp6ca successfully created and is running., DetailsLevel: INFO
+2026-05-30T06:33:06.8246830+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-30T06:33:07.1501154+00:00 ContainerStream: ssh-keygen: generating new host keys: DSA 
+2026-05-30T06:33:07.6652352+00:00 ContainerStream:  * Starting OpenBSD Secure Shell server sshd
+2026-05-30T06:33:07.6654173+00:00 ContainerStream:    ...done.
+2026-05-30T06:33:07.7150805+00:00 ContainerStream:  * sshd is running
+2026-05-30T06:33:07.7427024+00:00 ContainerStream: ## Printing build info...
+2026-05-30T06:33:07.7465893+00:00 ContainerStream:                                            PACKAGE |                             VERSION | COMMIT
+2026-05-30T06:33:07.7468178+00:00 ContainerStream:        Microsoft.AppService.WebsitesExtensionsJava |                        1.0.03290234 | ae284a4
+2026-05-30T06:33:07.7468361+00:00 ContainerStream:                                               self |                        1.0.03296336 | 76247a61
+2026-05-30T06:33:07.7547851+00:00 ContainerStream: ## Done printing build info.
+2026-05-30T06:33:07.7560489+00:00 ContainerStream: Container info: WEBSITE_INSTANCE_ID = b2123a5bf62a7afe140cbc11db1d041e616487abfe26fd9a59900c5dfe235f28 ; WEBSITE_SITE_NAME = railway-app-e7bhahbshp6ca
+2026-05-30T06:33:07.7857723+00:00 ContainerStream: Add public certificates to keystore if exists...
+2026-05-30T06:33:07.7940758+00:00 ContainerStream: Add private certificates to keystore if exists...
+2026-05-30T06:33:07.7956772+00:00 ContainerStream: Configuring max heap = 1299 MB
+2026-05-30T06:33:07.9115642+00:00 ContainerStream: STARTUP_FILE=
+2026-05-30T06:33:07.9116874+00:00 ContainerStream: STARTUP_COMMAND=
+2026-05-30T06:33:07.9116975+00:00 ContainerStream: No STARTUP_FILE available.
+2026-05-30T06:33:07.9117062+00:00 ContainerStream: No STARTUP_COMMAND defined.
+2026-05-30T06:33:07.9983360+00:00 ContainerStream: Could not find an excecutable jar in /home/site/wwwroot/ or any subdirectory. Using default parking page at /usr/local/appservice/parkingpage.jar
+2026-05-30T06:33:08.1064129+00:00 ContainerStream: Picked up JAVA_TOOL_OPTIONS: -javaagent:/agents/java/applicationinsights-agent-codeless.jar
+2026-05-30T06:33:10.4775274+00:00 ContainerStream: OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-05-30T06:33:46.8184270+00:00 ContainerStream: Mangled result from Jar entry point parser is: 2026-05-30 06:33:14.889Z INFO  c.m.a.a.i.c.ConfigurationBuilder - Some telemetry may be sampled out because a default sampling configuration was added in version 3.4.0 to reduce the default billing cost. You can set the sampling configuration explicitly: https://learn.microsoft.com/azure/azure-monitor/app/java-standalone-config#sampling
+2026-05-30T06:33:46.8185901+00:00 ContainerStream: 2026-05-30 06:33:24.483Z WARN  i.o.s.a.ResourceConfiguration - Found reference to io.opentelemetry.sdk.autoconfigure.internal.EnvironmentResourceProvider in otel.java.enabled.resource.providers. Please update to io.opentelemetry.sdk.autoconfigure.EnvironmentResourceProvider. Support for the old provider name will be removed after 1.49.0.
+2026-05-30T06:33:46.8186074+00:00 ContainerStream: 2026-05-30 06:33:44.533Z INFO  c.m.applicationinsights.agent - Application Insights Java Agent 3.7.3 started successfully (PID 49, JVM running for 36.432 s)
+2026-05-30T06:33:46.8186148+00:00 ContainerStream: 2026-05-30 06:33:44.543Z INFO  c.m.applicationinsights.agent - Java version: 17.0.17, vendor: Microsoft, home: /usr/lib/jvm/msopenjdk-17-amd64
+2026-05-30T06:33:46.8250684+00:00 ContainerStream: __COM_MICROSOFT_AZURE_APPSERVICE_JARENTRYPOINT_PREFIX__com.microsoft.azure.appservice.parkingpage.Main__COM_MICROSOFT_AZURE_APPSERVICE_JARENTRYPOINT_SUFFIX__
+2026-05-30T06:33:46.9363119+00:00 ContainerStream: Extracted jar entry point. Class name is: 'com.microsoft.azure.appservice.parkingpage.Main'
+2026-05-30T06:33:46.9870050+00:00 ContainerStream: Running command: java -cp /usr/local/appservice/parkingpage.jar:/usr/local/appservice/lib/azure.appservice.jar: -Djava.util.logging.config.file=/usr/local/appservice/logging.properties -Xmx1299M -Djava.net.preferIPv4Stack=true -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 -Dserver.port=80 -XX:ErrorFile=/home/LogFiles/java_error_railway-app-e7bhahbshp6ca_lw1sdlwk0002ST_%p.log -XX:+CrashOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/LogFiles/java_memdump_railway-app-e7bhahbshp6ca_lw1sdlwk0002ST.log -Duser.dir=/usr/local/appservice com.microsoft.azure.appservice.parkingpage.Main
+2026-05-30T06:33:46.9871108+00:00 ContainerStream: Launched child process with pid: 101
+2026-05-30T06:33:47.0266401+00:00 ContainerStream: [Telemetry] APP_JAR_PATH: /usr/local/appservice/parkingpage.jar:/usr/local/appservice/lib/azure.appservice.jar
+2026-05-30T06:33:47.0267455+00:00 ContainerStream: x-ms-applog:informational:base64:QVBQX0pBUl9QQVRIOiAvdXNyL2xvY2FsL2FwcHNlcnZpY2UvcGFya2luZ3BhZ2UuamFyOi91c3IvbG9jYWwvYXBwc2VydmljZS9saWIvYXp1cmUuYXBwc2VydmljZS5qYXI=
+2026-05-30T06:33:47.0277799+00:00 ContainerStream: x-ms-telemetry:informational:base64:QVBQX0pBUl9QQVRIOiAvdXNyL2xvY2FsL2FwcHNlcnZpY2UvcGFya2luZ3BhZ2UuamFyOi91c3IvbG9jYWwvYXBwc2VydmljZS9saWIvYXp1cmUuYXBwc2VydmljZS5qYXI=
+2026-05-30T06:33:47.1676808+00:00 ContainerStream: [Telemetry] JARs in /usr/local/appservice/parkingpage.jar: 
+2026-05-30T06:33:47.1883640+00:00 ContainerStream: Picked up JAVA_TOOL_OPTIONS: -javaagent:/agents/java/applicationinsights-agent-codeless.jar
+2026-05-30T06:33:47.1888867+00:00 ContainerStream: x-ms-applog:informational:base64:SkFScyBpbiAvdXNyL2xvY2FsL2FwcHNlcnZpY2UvcGFya2luZ3BhZ2UuamFyOiA=
+2026-05-30T06:33:47.1889970+00:00 ContainerStream: x-ms-telemetry:informational:base64:SkFScyBpbiAvdXNyL2xvY2FsL2FwcHNlcnZpY2UvcGFya2luZ3BhZ2UuamFyOiA=
+2026-05-30T06:33:47.1890891+00:00 ContainerStream: Waiting for main process to exit. GLOBAL_PID_MAIN=101
+2026-05-30T06:33:47.1891003+00:00 ContainerStream: Waiting for GLOBAL_PID_MAIN == 101
+2026-05-30T06:33:47.8211259+00:00 ContainerStream: OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-05-30T06:33:51.0456815+00:00 ContainerStream: 2026-05-30 06:33:51.027Z INFO  c.m.a.a.i.c.ConfigurationBuilder - Some telemetry may be sampled out because a default sampling configuration was added in version 3.4.0 to reduce the default billing cost. You can set the sampling configuration explicitly: https://learn.microsoft.com/azure/azure-monitor/app/java-standalone-config#sampling
+2026-05-30T06:33:57.9127551+00:00 ContainerStream: 2026-05-30 06:33:57.912Z WARN  i.o.s.a.ResourceConfiguration - Found reference to io.opentelemetry.sdk.autoconfigure.internal.EnvironmentResourceProvider in otel.java.enabled.resource.providers. Please update to io.opentelemetry.sdk.autoconfigure.EnvironmentResourceProvider. Support for the old provider name will be removed after 1.49.0.
+2026-05-30T06:34:18.6314161+00:00 ContainerStream: 2026-05-30 06:34:18.621Z INFO  c.m.applicationinsights.agent - Application Insights Java Agent 3.7.3 started successfully (PID 101, JVM running for 31.455 s)
+2026-05-30T06:34:18.6603811+00:00 ContainerStream: 2026-05-30 06:34:18.633Z INFO  c.m.applicationinsights.agent - Java version: 17.0.17, vendor: Microsoft, home: /usr/lib/jvm/msopenjdk-17-amd64
+2026-05-30T06:34:21.8159690+00:00 ContainerStatus: Site startup probe succeeded after 74.9898627 seconds.
+2026-05-30T06:34:22.1175538+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 74.9898627 seconds., DetailsLevel: INFO
+2026-05-30T06:34:22.7579678+00:00 ContainerStatus: Site started.
+2026-05-30T06:34:22.7587701+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/30/2026 06:34:22 (UTC), DetailsLevel: INFO

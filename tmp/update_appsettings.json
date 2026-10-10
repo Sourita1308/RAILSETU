@@ -1,0 +1,5 @@
+{
+  "properties": {
+    "DATABASE_PASSWORD": "@Microsoft.KeyVault(SecretUri=https://railway-kv-e7bhahbshp6ca.vault.azure.net/secrets/mysql-connection-string)"
+  }
+}
