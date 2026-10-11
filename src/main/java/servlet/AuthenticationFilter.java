@@ -26,7 +26,9 @@ public class AuthenticationFilter implements Filter {
     private final String[] staticResourcePrefixes = {
         "/css/",
         "/images/",
-        "/js/" // Add others if needed (like /fonts/)
+        "/Images/",
+        "/js/",
+        "/fonts/"
     };
 
 
@@ -55,10 +57,11 @@ public class AuthenticationFilter implements Filter {
         // Check if the requested path is one of the explicitly allowed public paths
         boolean isAllowedPath = allowedPaths.contains(pathWithinApp);
 
-        // Check if the requested path starts with any static resource prefix (e.g., /css/style.css)
+        // Check if the requested path starts with any static resource prefix (e.g., /css/style.css, /Images/...)
         boolean isStaticResource = false;
+        String lowerPath = pathWithinApp.toLowerCase();
         for (String prefix : staticResourcePrefixes) {
-            if (pathWithinApp.startsWith(prefix)) {
+            if (lowerPath.startsWith(prefix.toLowerCase())) {
                 isStaticResource = true;
                 break;
             }
