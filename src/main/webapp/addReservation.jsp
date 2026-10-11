@@ -227,9 +227,13 @@
               </div>
               
               <div class="row">
-                 <div>
+                 <div style="flex: 1;">
                     <label for="phone">Contact Phone</label>
                     <input type="tel" placeholder="+91" id="phone" name="phone" value="${user.phone}">
+                 </div>
+                 <div style="flex: 1;">
+                    <label for="journeyDate">Journey Date</label>
+                    <input type="date" id="journeyDate" name="journeyDate" required>
                  </div>
               </div>
               
@@ -310,6 +314,16 @@
 
     // 6. Run the function once on page load to show the first form
     updateFormsAndPrice();
+
+    // 7. Set min and default date for journeyDate
+    const journeyDateInput = document.getElementById('journeyDate');
+    if (journeyDateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        journeyDateInput.min = today;
+        if (!journeyDateInput.value) {
+            journeyDateInput.value = today;
+        }
+    }
 
 </script>
 

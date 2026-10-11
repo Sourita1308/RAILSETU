@@ -9,12 +9,49 @@ import model.Ticket;
 
 public class TicketDAO {
 
+    static {
+        ensureJourneyDateColumn();
+    }
+
     /**
-     * NEW METHOD: Books a new ticket by linking user, train, and passenger.
-     * This replaces your old 'bookTicket(Ticket ticket)' method.
+     * Ensures that the tickets table has the journey_date column.
+     */
+    public static void ensureJourneyDateColumn() {
+        try (Connection conn = DBConnection.getConnection();
+             Statement stmt = conn.createStatement()) {
+            stmt.executeUpdate("ALTER TABLE tickets ADD COLUMN journey_date DATE NULL");
+        } catch (SQLException ignored) {
+            // Column already exists or table altered
+        }
+    }
+
+    /**
+     * Books a new ticket with journey date linking user, train, and passenger.
+     */
+    public boolean bookTicket(int userId, int trainId, int passengerId, java.sql.Date journeyDate) throws SQLException {
+        ensureJourneyDateColumn();
+        String sql = "INSERT INTO tickets (user_id, train_id, passenger_id, journey_date) VALUES (?, ?, ?, ?)";
+        
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            
+            ps.setInt(1, userId);
+            ps.setInt(2, trainId);
+            ps.setInt(3, passengerId);
+            ps.setDate(4, journeyDate);
+
+            int rowsAffected = ps.executeUpdate();
+            return rowsAffected > 0;
+        } catch (SQLException e) {
+            // Fallback if journey_date column error occurs
+            return bookTicket(userId, trainId, passengerId);
+        }
+    }
+
+    /**
+     * Books a new ticket by linking user, train, and passenger.
      */
     public boolean bookTicket(int userId, int trainId, int passengerId) throws SQLException {
-        // This SQL query now includes the required user_id
         String sql = "INSERT INTO tickets (user_id, train_id, passenger_id) VALUES (?, ?, ?)";
         
         try (Connection conn = DBConnection.getConnection();
@@ -36,8 +73,7 @@ public class TicketDAO {
     public List<BookingDetails> getAllBookings() {
         List<BookingDetails> list = new ArrayList<>();
         
-        // FIXED: Changed tr.source to tr.source_station and tr.destination to tr.destination_station
-        String query = "SELECT t.ticket_id as booking_id, p.name as passenger_name, p.age, " + 
+        String query = "SELECT t.ticket_id as booking_id, t.journey_date, p.name as passenger_name, p.age, " + 
                        "tr.train_name, tr.source_station, tr.destination_station, tr.fare " + 
                        "FROM tickets t " +
                        "JOIN passenger p ON t.passenger_id = p.passenger_id " +
@@ -53,12 +89,14 @@ public class TicketDAO {
                 bd.setPassengerName(rs.getString("passenger_name"));
                 bd.setTrainName(rs.getString("train_name"));
                 
-                // FIXED: Read from the correct columns
                 bd.setSource(rs.getString("source_station"));
                 bd.setDestination(rs.getString("destination_station"));
                 
                 bd.setAge(rs.getInt("age"));
                 bd.setFare(rs.getDouble("fare"));
+                try {
+                    bd.setJourneyDate(rs.getDate("journey_date"));
+                } catch (SQLException ignored) {}
                 list.add(bd);
             }
         } catch (Exception e) {
@@ -70,13 +108,11 @@ public class TicketDAO {
     /**
      * This method fetches bookings only for a specific user.
      * This is used by your ViewBookingsServlet.
-     * (This is an assumed method from your project summary, let's make sure it's correct)
      */
     public List<BookingDetails> getAllBookingsByUserId(int userId) {
         List<BookingDetails> list = new ArrayList<>();
         
-        // FIXED: Changed tr.source to tr.source_station and tr.destination to tr.destination_station
-        String query = "SELECT t.ticket_id as booking_id, p.name as passenger_name, p.age, " +
+        String query = "SELECT t.ticket_id as booking_id, t.journey_date, p.name as passenger_name, p.age, " +
                        "tr.train_name, tr.source_station, tr.destination_station, tr.fare " +
                        "FROM tickets t " +
                        "JOIN passenger p ON t.passenger_id = p.passenger_id " +
@@ -95,12 +131,14 @@ public class TicketDAO {
                     bd.setPassengerName(rs.getString("passenger_name"));
                     bd.setTrainName(rs.getString("train_name"));
                     
-                    // FIXED: Read from the correct columns
                     bd.setSource(rs.getString("source_station"));
                     bd.setDestination(rs.getString("destination_station"));
                     
                     bd.setAge(rs.getInt("age"));
                     bd.setFare(rs.getDouble("fare"));
+                    try {
+                        bd.setJourneyDate(rs.getDate("journey_date"));
+                    } catch (SQLException ignored) {}
                     list.add(bd);
                 }
             }
@@ -114,22 +152,17 @@ public class TicketDAO {
     /**
      * This method correctly deletes a booking.
      */
-    // This is the NEW, correct method
-public boolean cancelBooking(int bookingId) throws SQLException {
-    String query = "DELETE FROM tickets WHERE ticket_id = ?";
+    public boolean cancelBooking(int bookingId) throws SQLException {
+        String query = "DELETE FROM tickets WHERE ticket_id = ?";
 
-    // This try-with-resources block will now correctly throw
-    // an SQLException if something goes wrong.
-    try (Connection con = DBConnection.getConnection();
-         PreparedStatement ps = con.prepareStatement(query)) {
+        try (Connection con = DBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(query)) {
 
-        ps.setInt(1, bookingId);
-        int rows = ps.executeUpdate();
-        return (rows > 0);
+            ps.setInt(1, bookingId);
+            int rows = ps.executeUpdate();
+            return (rows > 0);
+        }
     }
-    // We removed the "catch (Exception e)" block
-}
-// In: dao/TicketDAO.java
 
     /**
      * NEW METHOD: Gets all details for a single booking.
@@ -138,8 +171,7 @@ public boolean cancelBooking(int bookingId) throws SQLException {
     public BookingDetails getBookingById(int bookingId) {
         BookingDetails bd = null;
         
-        // This query joins all tables to get full details for one ticket
-        String query = "SELECT t.ticket_id as booking_id, " +
+        String query = "SELECT t.ticket_id as booking_id, t.journey_date, " +
                        "p.name as passenger_name, p.age, p.gender, " +
                        "tr.train_no, tr.train_name, tr.source_station, tr.destination_station, " +
                        "tr.departure_time, tr.arrival_time, tr.fare " +
@@ -167,6 +199,9 @@ public boolean cancelBooking(int bookingId) throws SQLException {
                     bd.setDepartureTime(rs.getTime("departure_time"));
                     bd.setArrivalTime(rs.getTime("arrival_time"));
                     bd.setFare(rs.getDouble("fare"));
+                    try {
+                        bd.setJourneyDate(rs.getDate("journey_date"));
+                    } catch (SQLException ignored) {}
                 }
             }
         } catch (Exception e) {

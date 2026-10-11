@@ -89,7 +89,12 @@
         <div class="ticket-header">
             <div>
                 <h1 class="text-2xl font-bold">RailSetu E-Ticket</h1>
-                <p class="text-sm text-gray-300">Booking ID: ${booking.bookingId}</p>
+                <p class="text-sm text-gray-300">
+                    Booking ID: ${booking.bookingId}
+                    <c:if test="${not empty booking.journeyDate}">
+                        &bull; Journey Date: <fmt:formatDate value="${booking.journeyDate}" pattern="dd MMM yyyy" />
+                    </c:if>
+                </p>
             </div>
             <h2 class="text-3xl font-bold">₹<fmt:formatNumber value="${booking.fare}" maxFractionDigits="0" /></h2>
         </div>
@@ -113,6 +118,23 @@
                 <div class="detail-item" style="grid-column: 1 / -1;">
                     <label>Train</label>
                     <p>${booking.trainName} (${booking.trainNo})</p>
+                </div>
+                <div class="detail-item">
+                    <label>Date of Journey</label>
+                    <p class="text-blue-700 font-bold">
+                        <c:choose>
+                            <c:when test="${not empty booking.journeyDate}">
+                                <fmt:formatDate value="${booking.journeyDate}" pattern="dd MMMM yyyy (EEEE)" />
+                            </c:when>
+                            <c:otherwise>
+                                Not Specified
+                            </c:otherwise>
+                        </c:choose>
+                    </p>
+                </div>
+                <div class="detail-item">
+                    <label>Booking Status</label>
+                    <p class="text-green-600 font-semibold">Confirmed (CNF)</p>
                 </div>
                 <div class="detail-item">
                     <label>From</label>

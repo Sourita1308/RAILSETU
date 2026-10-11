@@ -20,6 +20,7 @@ public class BookingDetails {
     private String destination;
     private Time departureTime; // <-- NEW
     private Time arrivalTime; // <-- NEW
+    private java.sql.Date journeyDate;
     private double fare;
 
     // --- Getters and Setters for all fields ---
@@ -53,6 +54,9 @@ public class BookingDetails {
 
     public Time getArrivalTime() { return arrivalTime; } // <-- NEW
     public void setArrivalTime(Time arrivalTime) { this.arrivalTime = arrivalTime; } // <-- NEW
+
+    public java.sql.Date getJourneyDate() { return journeyDate; }
+    public void setJourneyDate(java.sql.Date journeyDate) { this.journeyDate = journeyDate; }
 
     public double getFare() { return fare; }
     public void setFare(double fare) { this.fare = fare; }

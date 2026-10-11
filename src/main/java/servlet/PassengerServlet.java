@@ -36,6 +36,19 @@ public class PassengerServlet extends HttpServlet {
             int trainId = Integer.parseInt(request.getParameter("trainId"));
             int userId = Integer.parseInt(request.getParameter("userId"));
 
+            // 2b. Get Journey Date from request
+            String journeyDateStr = request.getParameter("journeyDate");
+            java.sql.Date journeyDate = null;
+            if (journeyDateStr != null && !journeyDateStr.trim().isEmpty()) {
+                try {
+                    journeyDate = java.sql.Date.valueOf(journeyDateStr.trim());
+                } catch (IllegalArgumentException e) {
+                    journeyDate = new java.sql.Date(System.currentTimeMillis());
+                }
+            } else {
+                journeyDate = new java.sql.Date(System.currentTimeMillis());
+            }
+
             // 3. Check if we actually got any passengers
             if (passengerNames == null || passengerNames.length == 0) {
                 throw new ServletException("No passenger details were submitted.");
@@ -57,8 +70,8 @@ public class PassengerServlet extends HttpServlet {
                     throw new SQLException("Failed to create passenger record for: " + passengerNames[i]);
                 }
 
-                // 4c. Book the ticket using all three IDs
-                boolean ticketBooked = ticketDAO.bookTicket(userId, trainId, newPassengerId);
+                // 4c. Book the ticket using all three IDs and journey date
+                boolean ticketBooked = ticketDAO.bookTicket(userId, trainId, newPassengerId, journeyDate);
 
                 if (!ticketBooked) {
                     throw new SQLException("Passenger was created, but ticket booking failed for: " + passengerNames[i]);
